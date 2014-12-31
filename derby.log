@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Dec 30 15:32:48 CST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-014a-9d1d-8e2f-0000007626e8 
+on database directory /home/mint/Contacts with class loader ContextLoader@Spring MVC Application 
+Loaded from file:/home/mint/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_25-b17
+user.dir=/home/mint/workspace/SpringApp
+os.name=Linux
+os.arch=i386
+os.version=3.13.0-37-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

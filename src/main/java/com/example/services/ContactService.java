@@ -2,21 +2,25 @@ package com.example.services;
 
 import java.util.List;
 
-import com.example.daos.ContactDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.daos.IContactDAO;
 import com.example.models.Contact;
 
+@Service
 public class ContactService {
 	
-	private ContactDAO contactDAO;
+	@Autowired
+	private IContactDAO contactDAO;
 	
 	public ContactService()
 	{
-		contactDAO = new ContactDAO();
 	}
 	
 	public int createContact(Contact contact)
 	{
-		return contactDAO.create(contact);
+		return contactDAO.save(contact);
 	}
 	
 	public int deleteContact(int id)
@@ -26,7 +30,7 @@ public class ContactService {
 	
 	public Contact getContactById(int id)
 	{
-		return contactDAO.getById(id);
+		return contactDAO.findById(id);
 	}
 	
 	public List<Contact> getContacts()

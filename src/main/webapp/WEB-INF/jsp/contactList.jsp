@@ -9,11 +9,16 @@
 </head>
 <body>
 	<table>
+		<tr>
+			<th>ID</th>
+			<th>First name</th>
+			<th>Last name</th>
+		</tr>
 		<t:forEach items="${result}" var="contact">
 			<tr>
-				<td>ID: <t:out value="${contact.id}" /></td>
-				<td>First Name: <t:out value="${contact.firstName}" /></td>
-				<td>Last Name: <t:out value="${contact.lastName}" /></td>
+				<td><t:out value="${contact.id}" /></td>
+				<td><t:out value="${contact.firstName}" /></td>
+				<td><t:out value="${contact.lastName}" /></td>
 			</tr>
 		</t:forEach>
 	</table>
